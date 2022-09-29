@@ -16,7 +16,8 @@ function high(x){
 
     let highestScore = 0
     let highestWord = ''
-    
+    constWord = x.split()
+
 
     
   }
