@@ -16,7 +16,45 @@ function high(x){
 
     let highestScore = 0
     let highestWord = ''
-    constWord = x.split()
+
+    // Checking what x gives us
+    console.log(x)
+
+    // We use split to make each word in the array a different item. 
+    const words = x.split(' ')
+    console.log(words)
+
+    // We then iterate over each word in the array
+    for (let i = words.lengh -1; i >= 0; i--) {
+        const word = words[i]
+        // To count all the letters inside word
+
+        let wordScoreCounter = 0
+
+        // We split each letter separately
+        word.split('').forEach(letter => {
+
+            /*
+             we sum up the word score but inorder to get it, we  need to know the value
+            of the character. We use the ascii character where each letter has its code.
+            
+            a is 97. We remove 96 as every other character increases
+             */
+            wordScoreCounter = wordScoreCounter + (letter.charcodeAt(0) - 96)
+        })
+
+            console.log(word, wordScoreCounter)
+
+            // update highest score and highest word
+
+            if(wordScoreCounter >= highestScore) {
+                highestScore = wordScoreCounter
+                highestWord = word
+            }
+            
+
+    }
+    return highestWord
 
 
     
