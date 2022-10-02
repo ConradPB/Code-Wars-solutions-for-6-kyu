@@ -17,7 +17,18 @@ The function parts_sums (or its variants in other languages) will take as parame
 */
 
 function partsSums(ls) {
+    // First, let's declare a variable set to an array with 0 in it
     let result = [0]
-    for ()
+
+    // We use a for loop to iterate through the ls array in reverse
+    for(const n in ls.reverse()) {
+
+        /* In every iteration, we push the result of the sum of the n element of ls and the n element of the result array
+         to the result array */
+        result.push(ls[n] + result[n])
+    }
+    // Finally, return the reversed result array 
+
+    return result.reverse()
 
 }
