@@ -18,17 +18,17 @@ There will always be a missing element and its length will be always between the
 function getLengthOfMissingArray(arr) {
     let result = 0;
   
-    if (arr === null || arr.length === 0) return 0;
+    if (arr === null || arr.length === 0) return 0
   
-    arr = arr.sort((a, b) => b.length - a.length);
+    arr = arr.sort((a, b) => b.length - a.length)
     console.log(arr)
 
     for (let i = 0; i < arr.length-1; i++) {
 
-        if (arr[i].length === 0 || arr[i] === null) return 0;
+        if (arr[i].length === 0 || arr[i] === null) return 0
     
         else if (arr[i].length - arr[i + 1].length !== 1) {
-          console.log(arr[i].length);
+          console.log(arr[i].length)
           console.log(arr[i + 1].length)
     
           result = arr[i].length - 1
