@@ -22,5 +22,17 @@ function getLengthOfMissingArray(arr) {
   
     arr = arr.sort((a, b) => b.length - a.length);
     console.log(arr)
+
+    for (let i = 0; i < arr.length-1; i++) {
+
+        if (arr[i].length === 0 || arr[i] === null) return 0;
     
+        else if (arr[i].length - arr[i + 1].length !== 1) {
+          console.log(arr[i].length);
+          console.log(arr[i + 1].length)
+    
+          result = arr[i].length - 1
+        }
+      }
+      return result
 }  
