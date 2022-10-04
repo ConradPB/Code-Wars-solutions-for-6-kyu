@@ -15,23 +15,23 @@ When an array in the array is null or empty, the method should return 0 too!
 There will always be a missing element and its length will be always between the given arrays.
 */
 
-function getLengthOfMissingArray(arr) {
-    let result = 0;
+function getLengthOfMissingArray(arrayOfArrays) {
+    let result = 0
   
-    if (arr === null || arr.length === 0) return 0
+    if (arrayOfArrays === null || arrayOfArrays.length === 0) return 0
   
-    arr = arr.sort((a, b) => b.length - a.length)
-    console.log(arr)
+    arrayOfArrays = arrayOfArrays.sort((a, b) => b.length - a.length)
+    console.log(arrayOfArrays)
 
-    for (let i = 0; i < arr.length-1; i++) {
+    for (let i = 0; i < arrayOfArrays.length-1; i++) {
 
-        if (arr[i].length === 0 || arr[i] === null) return 0
+        if (arrayOfArrays[i].length === 0 || arrayOfArrays[i] === null) return 0
     
-        else if (arr[i].length - arr[i + 1].length !== 1) {
-          console.log(arr[i].length)
-          console.log(arr[i + 1].length)
+        else if (arrayOfArrays[i].length - arrayOfArrays[i + 1].length !== 1) {
+          console.log(arrayOfArrays[i].length)
+          console.log(arrayOfArrays[i + 1].length)
     
-          result = arr[i].length - 1
+          result = arrayOfArrays[i].length - 1
         }
       }
       return result
