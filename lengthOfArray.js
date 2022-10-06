@@ -19,6 +19,9 @@ function getLengthOfMissingArray(arrayOfArrays) {
     let result = 0
   
     if (arrayOfArrays === null || arrayOfArrays.length === 0) return 0
+
+    arrayOfArrays = arrayOfArrays.filter(element => 
+      {return element !== null})
   
     arrayOfArrays = arrayOfArrays.sort((a, b) => b.length - a.length)
     console.log(arrayOfArrays)
