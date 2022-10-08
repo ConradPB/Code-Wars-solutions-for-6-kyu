@@ -5,5 +5,6 @@ Punctuation marks should be treated as if they are a part of the word in this ka
 */
 
 function reverse(str){
-    //WRITE SOME MAGIC
+    ourArray = string.split
+    ourArray.map.with_index{|word,index| index.odd? ? word.reverse : word }.join(' ')
   }
