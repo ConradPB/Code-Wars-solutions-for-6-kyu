@@ -15,8 +15,12 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
 function alphabetPosition(text) {
     if (typeof text !== "string") 
     return "wrong entry"
+    // Lower the letter case
     text = text.toLowerCase()
+    // set result to an empty string
     let result = ''
+
+    // lets define the alphabets object
     const alphabets = {
         A: "1 ",
         B: "2 ",
@@ -46,6 +50,12 @@ function alphabetPosition(text) {
         Z: "26 ",
       };
       for (let i = 0; i < text.length; ++i) {
+        for (const letter in alphabets) {
+      if (text.charAt(i) === letter) {
+        result += alphabets[letter];
+      }
+    }
 
+}
 
 }
