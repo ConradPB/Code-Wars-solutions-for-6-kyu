@@ -57,5 +57,6 @@ function alphabetPosition(text) {
     }
 
 }
+return result.slice(0, result.length - 1)
 
 }
