@@ -11,4 +11,8 @@ Examples:
 function solution(str){
     var arr = str.split('')
    var res = []
+
+   for(let i = 0; i<arr.length; i+=2){
+    
+   }
 }
