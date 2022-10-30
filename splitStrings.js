@@ -23,4 +23,6 @@ function solution(str){
       else
 
    }
+
+   return res
 }
