@@ -9,10 +9,18 @@ Examples:
 */
 
 function solution(str){
-    var arr = str.split('')
-   var res = []
+
+    // lets create an array of the string and an array to save the result
+
+   let arr = str.split('')
+   let result = []
+   /* We then create a for loop to iterate through the array.
+      In every iteration we add two to the value of "i", so it iterates every two elements
+      */
 
    for(let i = 0; i<arr.length; i+=2){
-    
+      if(arr[i+1]) res.push(arr[i]+arr[i+1])
+      else
+
    }
 }
