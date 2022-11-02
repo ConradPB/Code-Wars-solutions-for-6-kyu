@@ -21,6 +21,7 @@ function solution(str){
    for(let i = 0; i<arr.length; i+=2){
       if(arr[i+1]) res.push(arr[i]+arr[i+1])
       else
+      res.push(arr[i]+'_')
 
    }
 
