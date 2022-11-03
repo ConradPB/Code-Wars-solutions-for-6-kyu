@@ -14,8 +14,8 @@ function solution(str){
 
    let arr = str.split('')
    let result = []
-   /* We then create a for loop to iterate through the array.
-      In every iteration we add two to the value of "i", so it iterates every two elements
+   /* Create a for loop to iterate through the array.
+      In every iteration, add two to the value of "i", so it iterates every two elements
       */
 
    for(let i = 0; i<arr.length; i+=2){
@@ -24,6 +24,6 @@ function solution(str){
       res.push(arr[i]+'_')
 
    }
-
+// return the result array
    return res
 }
