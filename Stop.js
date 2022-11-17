@@ -2,14 +2,14 @@ function spinWords(string){
     const stringArray = string.split(' ')
     let result = ''
 
-    sentenceArray.map((str, i) => {
+    stringArray.map((str, i) => {
         if (str.length >= 5){
-          sentenceArray[i] = str.split('').reverse().join('');
+          stringArray[i] = str.split('').reverse().join('');
         } else {
-          sentenceArray[i] = str;
+          stringArray[i] = str;
         }
-      result = sentenceArray.join(' ');
-      })
+      result = stringArray.join(' ');
+      }) 
 
     
     
